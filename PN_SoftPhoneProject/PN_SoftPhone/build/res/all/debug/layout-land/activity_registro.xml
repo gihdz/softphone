@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context=".RegistroActivity">
+    <!-- Registro progress -->
+    <LinearLayout android:id="@+id/login_table_status"
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp"/>
+        <TextView
+                android:id="@+id/login_status_message"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="" />
+    </LinearLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/login_table"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000">
+        <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:text="@string/form_registro"/>
+
+
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_registro_email_policia"
+                android:id="@+id/textViewRegistroEmailPolicia"
+                android:layout_column="0"/>
+
+        <EditText
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editTextRegistroPoliciaEmail"
+                android:hint="@string/edit_text_hint1_registro_email_policia"
+                android:singleLine="true"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_registro_contrasena_policia"
+                android:id="@+id/textViewRegistroContrasena"
+                android:layout_column="0"/>
+
+        <EditText
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editTextRegistroContrasena"
+                android:hint="@string/edit_text_hint1_registro_contrasena_policia"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_registro_id_policia"
+                android:id="@+id/textViewRegistroIdPolicia"
+                android:layout_column="0"/>
+
+        <EditText
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextRegistroIdPolicia"
+                android:hint="@string/edit_text_hint1_registro_id_policia"
+                android:singleLine="true"
+                android:phoneNumber="false"
+                android:maxLength="@integer/id_policia_length"
+                android:inputType="number"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_registro_imei"
+                android:id="@+id/textViewRegistroIMEI"
+                android:layout_column="0"/>
+
+        <TextView
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_view_registro_show_imei"
+                android:id="@+id/textViewRegistroShowIMEI"/>
+
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonRegistroRegistrar"
+                android:singleLine="false"
+                android:text="@string/button_registro_registrar"
+                />
+
+        <Button
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/button_registro_cancelar"
+                android:id="@+id/buttonRegistroCancelar"
+                />
+
+    </TableRow>
+
+</TableLayout>
+    </merge><!-- From: file:/C:/Users/GDHB/Desktop/Documents/GitHub/softphone/PN_SoftPhoneProject/PN_SoftPhone/src/main/res/layout-land/activity_registro.xml -->

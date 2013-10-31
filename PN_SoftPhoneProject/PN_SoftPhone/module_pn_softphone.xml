@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_pn_softphone" default="compile.module.pn_softphone">
+  <dirname property="module.pn_softphone.basedir" file="${ant.file.module_pn_softphone}"/>
+  
+  <property name="module.jdk.home.pn_softphone" value="${jdk.home.android_4.2.2_platform}"/>
+  <property name="module.jdk.bin.pn_softphone" value="${jdk.bin.android_4.2.2_platform}"/>
+  <property name="module.jdk.classpath.pn_softphone" value="jdk.classpath.android_4.2.2_platform"/>
+  
+  <property name="compiler.args.pn_softphone" value="${compiler.args}"/>
+  
+  <property name="pn_softphone.output.dir" value="${module.pn_softphone.basedir}/build/classes/debug"/>
+  <property name="pn_softphone.testoutput.dir" value="${module.pn_softphone.basedir}/build/classes/debug"/>
+  
+  <path id="pn_softphone.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="pn_softphone.module.production.classpath">
+    <path refid="${module.jdk.classpath.pn_softphone}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+    <path refid="library.ksoap2-24.classpath"/>
+  </path>
+  
+  <path id="pn_softphone.runtime.production.module.classpath">
+    <pathelement location="${pn_softphone.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+    <path refid="library.ksoap2-24.classpath"/>
+  </path>
+  
+  <path id="pn_softphone.module.classpath">
+    <path refid="${module.jdk.classpath.pn_softphone}"/>
+    <pathelement location="${pn_softphone.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+    <path refid="library.ksoap2-24.classpath"/>
+  </path>
+  
+  <path id="pn_softphone.runtime.module.classpath">
+    <pathelement location="${pn_softphone.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+    <path refid="library.ksoap2-24.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.pn_softphone">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.pn_softphone">
+    <patternset refid="excluded.from.module.pn_softphone"/>
+  </patternset>
+  
+  <path id="pn_softphone.module.sourcepath">
+    <dirset dir="${module.pn_softphone.basedir}">
+      <include name="build/source/r/debug"/>
+      <include name="build/source/aidl/debug"/>
+      <include name="build/source/rs/debug"/>
+      <include name="build/source/buildConfig/debug"/>
+      <include name="build/res/rs/debug"/>
+      <include name="src/main/java"/>
+      <include name="src/main/res"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.pn_softphone" depends="compile.module.pn_softphone.production,compile.module.pn_softphone.tests" description="Compile module PN_SoftPhone"/>
+  
+  <target name="compile.module.pn_softphone.production" depends="register.custom.compilers" description="Compile module PN_SoftPhone; production classes">
+    <mkdir dir="${pn_softphone.output.dir}"/>
+    <javac2 destdir="${pn_softphone.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.pn_softphone}/javac">
+      <compilerarg line="${compiler.args.pn_softphone}"/>
+      <bootclasspath refid="pn_softphone.module.bootclasspath"/>
+      <classpath refid="pn_softphone.module.production.classpath"/>
+      <src refid="pn_softphone.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.pn_softphone"/>
+    </javac2>
+    
+    <copy todir="${pn_softphone.output.dir}">
+      <fileset dir="${module.pn_softphone.basedir}/build/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/build/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/build/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/build/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/build/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.pn_softphone.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.pn_softphone.tests" depends="register.custom.compilers,compile.module.pn_softphone.production" description="compile module PN_SoftPhone; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.pn_softphone" description="cleanup module">
+    <delete dir="${pn_softphone.output.dir}"/>
+    <delete dir="${pn_softphone.testoutput.dir}"/>
+  </target>
+</project>

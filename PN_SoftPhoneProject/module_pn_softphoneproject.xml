@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_pn_softphoneproject" default="compile.module.pn_softphoneproject">
+  <dirname property="module.pn_softphoneproject.basedir" file="${ant.file.module_pn_softphoneproject}"/>
+  
+  <property name="module.jdk.home.pn_softphoneproject" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.pn_softphoneproject" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.pn_softphoneproject" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.pn_softphoneproject" value="${compiler.args}"/>
+  
+  <property name="pn_softphoneproject.output.dir" value="${module.pn_softphoneproject.basedir}/build/classes/production/PN_SoftPhoneProject"/>
+  <property name="pn_softphoneproject.testoutput.dir" value="${module.pn_softphoneproject.basedir}/build/classes/test/PN_SoftPhoneProject"/>
+  
+  <path id="pn_softphoneproject.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="pn_softphoneproject.module.production.classpath">
+    <path refid="${module.jdk.classpath.pn_softphoneproject}"/>
+  </path>
+  
+  <path id="pn_softphoneproject.runtime.production.module.classpath">
+    <pathelement location="${pn_softphoneproject.output.dir}"/>
+  </path>
+  
+  <path id="pn_softphoneproject.module.classpath">
+    <path refid="${module.jdk.classpath.pn_softphoneproject}"/>
+    <pathelement location="${pn_softphoneproject.output.dir}"/>
+  </path>
+  
+  <path id="pn_softphoneproject.runtime.module.classpath">
+    <pathelement location="${pn_softphoneproject.testoutput.dir}"/>
+    <pathelement location="${pn_softphoneproject.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.pn_softphoneproject">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.pn_softphoneproject">
+    <patternset refid="excluded.from.module.pn_softphoneproject"/>
+  </patternset>
+  
+  
+  <target name="compile.module.pn_softphoneproject" depends="compile.module.pn_softphoneproject.production,compile.module.pn_softphoneproject.tests" description="Compile module PN_SoftPhoneProject"/>
+  
+  <target name="compile.module.pn_softphoneproject.production" depends="register.custom.compilers" description="Compile module PN_SoftPhoneProject; production classes"/>
+  
+  <target name="compile.module.pn_softphoneproject.tests" depends="register.custom.compilers,compile.module.pn_softphoneproject.production" description="compile module PN_SoftPhoneProject; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.pn_softphoneproject" description="cleanup module">
+    <delete dir="${pn_softphoneproject.output.dir}"/>
+    <delete dir="${pn_softphoneproject.testoutput.dir}"/>
+  </target>
+</project>

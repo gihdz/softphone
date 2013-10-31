@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.pn.pn_softphone">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+
+
+    <uses-feature android:name="android.hardware.sip.voip" android:required="true"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+
+
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17"/>
+
+
+    <application android:allowBackup="true" android:icon="@drawable/icon2" android:label="@string/app_name" android:name="com.pn.pn_softphone.MyApp" android:theme="@style/AppTheme">
+
+        <activity android:label="@string/app_name" android:name="com.pn.pn_softphone.LoginActivity" android:theme="@android:style/Theme.Dialog">
+         <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity android:label="@string/app_name" android:name="com.pn.pn_softphone.RegistroActivity" android:theme="@android:style/Theme.Dialog">&gt;
+
+        </activity>
+        <activity android:label="" android:name="com.pn.pn_softphone.IncomingCallGui">
+
+            </activity>
+        <activity android:label="" android:name="com.pn.pn_softphone.OnCallingGui">
+
+
+            </activity>
+
+
+
+
+        <activity android:label="@string/app_name" android:name="com.pn.pn_softphone.PnSoftPhoneActivity" android:parentActivityName="com.pn.pn_softphone.PnSoftPhoneActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pn.pn_softphone.PnSoftPhoneActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+
+            </activity>
+        <activity android:label="set_preferences" android:name="com.pn.pn_softphone.SipSettings"/>
+        <receiver android:label="Call Receiver" android:name="com.pn.pn_softphone.IncomingCallReceiver"/>
+
+
+
+
+
+
+
+    </application>
+
+
+
+
+
+
+
+
+
+
+
+</manifest><!--android:windowSoftInputMode="stateHidden|adjustResize"-->

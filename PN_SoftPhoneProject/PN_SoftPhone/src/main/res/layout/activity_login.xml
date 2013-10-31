@@ -1,0 +1,128 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context=".RegistroActivity">
+    <!-- Login progress -->
+    <LinearLayout android:id="@+id/login_status"
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp"/>
+        <TextView
+                android:id="@+id/login_status_message2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="" />
+    </LinearLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/login_table2"
+             tools:context=".MainActivity">
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000">
+        <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:text="@string/form_login"/>
+
+    </TableRow>
+
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewIdPolicia"
+                android:layout_column="0"
+                android:text="@string/text_view_login_email"/>
+
+        <EditText
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextEmail"
+                android:layout_column="1"
+                android:ems="10"
+                android:hint="@string/text_view_login_hint_email"
+                android:inputType="textEmailAddress"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewContrasena"
+                android:layout_column="0"
+                android:singleLine="false"
+                android:text="@string/text_view_contrasena"/>
+
+        <EditText
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextContrasena"
+                android:layout_column="1"
+                android:inputType="textPassword"
+                android:hint="@string/edit_text_hint_contrasena_pass"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        <Button
+                android:onClick="preLlamarRegistroPoliciaActivity"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonQuery"
+                android:layout_column="0"
+                android:singleLine="false"
+                android:text="@string/button_registrar"/>
+
+        <Button
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/button_login"
+                android:id="@+id/buttonLogin"
+                android:layout_column="1"
+                android:onClick="LoginPolicia"/>
+    </TableRow>
+
+
+
+
+</TableLayout>
+</merge>

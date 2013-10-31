@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\debug\assets" />
+    </dataSet>
+
+</merger>

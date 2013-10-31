@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res" >
+            <file
+                name="btn_record"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\btn_record.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_speak_normal"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\btn_speak_normal.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_speak_pressed"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\btn_speak_pressed.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_speak_selected"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\btn_speak_selected.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="greencall"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\greencall.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="icon"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="icon2"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\icon2.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\ic_launcher.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_status_connecting"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\ic_status_connecting.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_status_offline"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\ic_status_offline.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_status_online"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\ic_status_online.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_status_reg_fail"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\ic_status_reg_fail.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="logopn"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\logopn.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="redcall"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable\redcall.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_incoming_call_gui"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\activity_incoming_call_gui.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_login"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\activity_login.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_on_calling_gui"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\activity_on_calling_gui.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_pnsoftphone"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\activity_pnsoftphone.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_registro"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\activity_registro.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="call_address_dialog"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout\call_address_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_login"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout-land\activity_login.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="activity_pnsoftphone"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout-land\activity_pnsoftphone.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="activity_registro"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\layout-land\activity_registro.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="login"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\menu\login.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="telephone"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\raw\telephone.mp3"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="usringbacktone"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\raw\usringbacktone.ogg"
+                qualifiers=""
+                type="raw" />
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\colors.xml"
+                qualifiers="" >
+                <color name="LightGreen" >#3CB371
+                </color>
+                <color name="White" >#FFFFFF
+                </color>
+                <color name="DarkGreen" >#006400
+                </color>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="status_icon_heigth" >38dp
+                </dimen>
+                <dimen name="status_icon_width" >38dp
+                </dimen>
+                <dimen name="padding_5dp" >5dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\ids.xml"
+                qualifiers="" >
+                <item
+                    name="incomingCallView"
+                    type="id">
+3
+                </item>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\integers.xml"
+                qualifiers="" >
+                <integer name="id_policia_length" >
+5
+                </integer>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="status_login" >Accediendo... Por favor espere...
+                </string>
+                <string name="error_contrasena_incorrecta" >La contraseña es incorrecta!
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="error_contrasena_tamano" >La contraseña es muy corta!
+                </string>
+                <string name="edit_text_hint1_registro_contrasena_policia" >Contraseña
+                </string>
+                <string name="copid_display" >COPID
+                </string>
+                <string name="text_view_registro_email_policia" >Email
+                </string>
+                <string name="form_registro" >Registro
+                </string>
+                <string name="text_view_contrasena" >Contraseña
+                </string>
+                <string name="titulo" >Secure Phone
+                </string>
+                <string name="Calling_Msg" >Secure call in progress...
+                </string>
+                <string name="button_registrar" >Registro
+                </string>
+                <string name="text_view_registro_id_policia" >ID Policia
+                </string>
+                <string name="insertcalladdresshint" >Insertar # a llamar
+                </string>
+                <string name="button_registro_cancelar" >Cancelar
+                </string>
+                <string name="edit_text_hint1_registro_email_policia" >Email
+                </string>
+                <string name="form_login" >Login
+                </string>
+                <string name="text_view_registro_contrasena_policia" >Contraseña
+                </string>
+                <string name="error_campo_requerido" >Este campo es requerido!
+                </string>
+                <string name="text_view_login_hint_email" >Email
+                </string>
+                <string name="status_registrando" >Registrando...
+                </string>
+                <string name="text_view_registro_imei" >IMEI
+                </string>
+                <string name="error_cop_id_invalido" >Este usuario no existe!
+                </string>
+                <string name="error_email_invalido" >Email incorrecto!
+                </string>
+                <string name="edit_text_hint_contrasena_pass" >Contraseña
+                </string>
+                <string name="imei_display" >IMEI
+                </string>
+                <string name="button_login" >Login
+                </string>
+                <string name="title" >Secure Phone
+                </string>
+                <string name="app_name" >PN Secure SoftPhone
+                </string>
+                <string name="edit_text_hint1_registro_imei" >IMEI
+                </string>
+                <string name="text_view_login_email" >Email
+                </string>
+                <string name="text_view_registro_show_imei" >""
+                </string>
+                <string name="error_argumento_muy_corto" >Argumento provisto es muy corto!
+                </string>
+                <string name="contactAddress" >Contacto a llamar:
+                </string>
+                <string name="edit_text_hint1_registro_id_policia" >ID Policia
+                </string>
+                <string name="id_Display" >ID
+                </string>
+                <string name="talk" >Talk
+                </string>
+                <string name="button_registro_registrar" >Registrar
+                </string>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values-sw720dp-land\dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="preferences"
+                path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\main\res\xml\preferences.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\build\res\rs\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\PN_SoftPhone\src\debug\res" />
+    </dataSet>
+
+</merger>
