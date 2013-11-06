@@ -31,7 +31,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -240,13 +239,18 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         mNotificationManager.notify(mId, mBuilder.build());*/
 
 
-
         inicializar();
-        showDialog("SensorName: "+proximitySensor.getName()+
-        "\nSensorMaximumRange: "+proximitySensor.getMaximumRange()+
-        "\nType: "+proximitySensor.getType() +
-        "\nResolution: "+proximitySensor.getResolution() +
-        "\nMinDelay: "+proximitySensor.getMinDelay());
+        //        if (Security.getProvider("BC") == null){
+//            showDialog("Bouncy Castle provider is NOT available");
+//        }
+//        else{
+//            showDialog("Bouncy Castle provider is available");
+//        }
+//        showDialog("SensorName: "+proximitySensor.getName()+
+//        "\nSensorMaximumRange: "+proximitySensor.getMaximumRange()+
+//        "\nType: "+proximitySensor.getType() +
+//        "\nResolution: "+proximitySensor.getResolution() +
+//        "\nMinDelay: "+proximitySensor.getMinDelay());
     }
     private void inicializar(){
         if(!SipManager.isVoipSupported(this)){
@@ -275,7 +279,6 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 
         //initializeManager();
     }
-
     @Override
     public void onStart() {
         super.onStart();
@@ -287,9 +290,14 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
-        //initializeManager();
+        initializeManager();
         //initializeLocalProfile();
         mPlayer = MediaPlayer.create(this, R.raw.usringbacktone);
         mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
@@ -711,6 +719,7 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         return true;
     }
 
+
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -760,6 +769,7 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 
 
     public void updatePreferences() {
+
         Intent settingsActivity = new Intent(getBaseContext(),SipSettings.class);
         startActivity(settingsActivity);
     }

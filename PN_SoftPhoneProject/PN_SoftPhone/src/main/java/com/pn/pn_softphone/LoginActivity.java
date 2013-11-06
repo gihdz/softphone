@@ -36,6 +36,7 @@ import java.util.Map;
 
 import softphoneutils.GlobalUtils;
 import softphoneutils.Prueba;
+import softphoneutils.SecurityUtil;
 
 import static softphoneutils.GlobalUtils.GlobalParameters.OPERATION_NAME_LOGINCOP;
 import static softphoneutils.GlobalUtils.GlobalParameters.OPERATION_NAME_VERIFYIMEI;
@@ -48,6 +49,8 @@ public class LoginActivity extends Activity implements SensorEventListener {
     private View LoginForm;
     private View LoginFormStatus;
     TextView Login_Status_Message;
+
+    SecurityUtil securityUtil;
 
     SharedPreferences sharedPreferences;
 
@@ -80,6 +83,8 @@ public class LoginActivity extends Activity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        securityUtil = new SecurityUtil();
 
 
         this.setFinishOnTouchOutside(false);
@@ -182,6 +187,11 @@ public class LoginActivity extends Activity implements SensorEventListener {
 
         //Intent intent = new Intent(this, PnSoftPhoneActivity.class);
       //  startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
     }
 
     /**
@@ -337,6 +347,8 @@ public class LoginActivity extends Activity implements SensorEventListener {
         protected Prueba doInBackground(Void... voids) {
 
             Prueba respuesta;
+            String encryptedPass = "";
+            String encryptedEmail = "";
 
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE, OPERATION_NAME_LOGINCOP);
 
@@ -348,13 +360,28 @@ public class LoginActivity extends Activity implements SensorEventListener {
             property_Contrasena.type = PropertyInfo.STRING_CLASS;
             property_Contrasena.name = "Password";
 
+            PropertyInfo property_IMEI = new PropertyInfo();
+            property_IMEI.type = PropertyInfo.STRING_CLASS;
+            property_IMEI.name = "IMEI";
+
 
 
             Email = editText_Email.getText().toString();
             Contrasena = editText_Contrasena.getText().toString();
 
-            request.addPropertyIfValue(property_Email, Email);
-            request.addPropertyIfValue(property_Contrasena, Contrasena);
+            try {
+                encryptedPass = securityUtil.encrypt(Contrasena, aIMEI);
+                encryptedEmail = securityUtil.encrypt(Email, aIMEI);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            //request.addPropertyIfValue(property_Email, Email);
+            //request.addPropertyIfValue(property_Contrasena, Contrasena);
+            request.addPropertyIfValue(property_Email, encryptedEmail);
+            request.addPropertyIfValue(property_Contrasena, encryptedPass);
+            request.addPropertyIfValue(property_IMEI, aIMEI);
+
 
 
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
@@ -377,6 +404,7 @@ public class LoginActivity extends Activity implements SensorEventListener {
             }
             return respuesta;
         }
+
 
         @Override
         protected void onPostExecute(Prueba aPrueba) {

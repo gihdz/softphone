@@ -23,7 +23,25 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd336cf5-ff37-4899-97a2-f7d98efe7b03" name="Default" comment="Agregando activity para cuando un usuario esta llamando.&#10;Arreglos en flujo de llamada.&#10;Arreglos en Ringback Tone." />
+    <list default="true" id="dd336cf5-ff37-4899-97a2-f7d98efe7b03" name="Default" comment="Inicial">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/SecurityUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bcprov_jdk15on_149.xml" />
+      <change type="DELETED" beforePath="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\gradle\wrapper\gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GDHB\Desktop\Documents\GitHub\softphone\PN_SoftPhoneProject\gradle\wrapper\gradle-wrapper.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java" afterPath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java" afterPath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/PN_SoftPhone.iml" afterPath="$PROJECT_DIR$/PN_SoftPhone/PN_SoftPhone.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhoneProject.iml" afterPath="$PROJECT_DIR$/PN_SoftPhoneProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" afterPath="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build/source/r/debug/com/pn/pn_softphone/R.java" afterPath="$PROJECT_DIR$/PN_SoftPhone/build/source/r/debug/com/pn/pn_softphone/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build.gradle" afterPath="$PROJECT_DIR$/PN_SoftPhone/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-sw720dp-land/values.xml" afterPath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-sw720dp-land/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-v11/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-v14/values.xml" afterPath="$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values-v14/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <list id="4540b7ec-cf0a-4259-9128-0ebcfc430c92" name="NoCommit" comment="NoCommit" />
     <ignored path="PN_SoftPhone.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +100,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/RegistroActivity.java" line="277" class="com.pn.pn_softphone.RegistroActivity.AsyncRegistrarPolicia" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
@@ -99,7 +116,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="444" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="452" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,7 +131,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="415" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="423" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -129,7 +146,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="391" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="399" class="com.pn.pn_softphone.PnSoftPhoneActivity$3" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -144,7 +161,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="111" class="com.pn.pn_softphone.PnSoftPhoneActivity" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="110" class="com.pn.pn_softphone.PnSoftPhoneActivity" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -159,7 +176,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="516" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="524" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -174,7 +191,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="521" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="529" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -189,7 +206,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="526" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="534" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -204,7 +221,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="531" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="539" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -339,7 +356,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="555" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="563" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -354,7 +371,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="603" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
+      <breakpoint url="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" line="611" class="com.pn.pn_softphone.PnSoftPhoneActivity$4" package="com.pn.pn_softphone">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -385,6 +402,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -403,10 +421,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncomingCallReceiver.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IncomingCallReceiver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/IncomingCallReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="44" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.3913669" vertical-offset="2601" max-vertical-offset="4233">
+            <state line="183" column="51" selection-start="6251" selection-end="6251" vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4573">
               <folding />
             </state>
           </provider>
@@ -415,7 +433,16 @@
       <file leaf-file-name="PnSoftPhoneActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="597" column="41" selection-start="22139" selection-end="22139" vertical-scroll-proportion="0.0" vertical-offset="10149" max-vertical-offset="15249">
+            <state line="58" column="22" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="14076">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/SecurityUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="15" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -430,52 +457,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="69" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_incoming_call_gui.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_incoming_call_gui.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state line="5" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_pnsoftphone.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_pnsoftphone.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state line="28" column="17" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="2057">
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="302" column="65" selection-start="10737" selection-end="10737" vertical-scroll-proportion="0.0" vertical-offset="5134" max-vertical-offset="7446">
+            <state line="181" column="39" selection-start="5943" selection-end="5943" vertical-scroll-proportion="0.0" vertical-offset="2260" max-vertical-offset="7106">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PN_SoftPhone/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.33333334" vertical-offset="135" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -484,7 +502,7 @@
       <file leaf-file-name="GlobalUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1224">
+            <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -858,7 +876,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users" value="1382362331126" />
+        <entry key="C:\Users" value="1382405358058" />
         <entry key="C:\Users\Emanuel\Documents\GitHub\pn-softphone\PN_SoftPhoneProject" value="1379635039802" />
         <entry key="C:\Users\GDHB\Desktop\Documents\GitHub\pn-softphone\PN_SoftPhoneProject" value="1373833806010" />
         <entry key="C:\Users\GDHB\Desktop\Documents\GitHub\softphone-proyecto\PN_SoftPhoneProject" value="1379635039802" />
@@ -869,22 +887,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/Prueba.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/RegistroActivity.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_on_calling_gui.xml" />
-        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/MyApp.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_pnsoftphone.xml" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_incoming_call_gui.xml" />
-        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/IncomingCallGui.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/OnCallingGui.java" />
         <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/IncomingCallReceiver.java" />
+        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java" />
+        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/SecurityUtil.java" />
+        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java" />
+        <option value="$PROJECT_DIR$/PN_SoftPhone/build.gradle" />
+        <option value="$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java" />
       </list>
     </option>
   </component>
@@ -939,150 +957,11 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softphoneutils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhoneProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PN_SoftPhone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pn_softphone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1168,6 +1047,7 @@
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1176,6 +1056,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1184,6 +1065,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1211,19 +1105,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1266,6 +1147,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1274,6 +1156,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="PN_SoftPhone" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1282,6 +1165,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1290,6 +1174,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
@@ -1404,20 +1289,20 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7170596" sideWeight="0.5236729" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30097088" sideWeight="0.47632712" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.375" sideWeight="0.5236729" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53536755" sideWeight="0.48995695" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.670068" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.670068" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23023579" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39805827" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53536755" sideWeight="0.510043" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45735294" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67315716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.52582496" sideWeight="0.705146" order="0" side_tool="false" content_ui="combo" x="159" y="143" width="424" height="623" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635229" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.52582496" sideWeight="0.705146" order="0" side_tool="false" content_ui="combo" x="773" y="141" width="424" height="623" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2617647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1443,43 +1328,14 @@
     <MESSAGE value="Pilas de cambios" />
     <MESSAGE value="Arreglando el RingBackTOne 100%" />
     <MESSAGE value="Agregando activity para cuando un usuario esta llamando.&#10;Arreglos en flujo de llamada.&#10;Arreglos en Ringback Tone." />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregando activity para cuando un usuario esta llamando.&#10;Arreglos en flujo de llamada.&#10;Arreglos en Ringback Tone." />
+    <MESSAGE value="Inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicial" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/util/Log.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.60714287" vertical-offset="442" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_on_calling_gui.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="3033" selection-end="3033" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="1955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/build/res/all/debug/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="12" selection-start="3890" selection-end="3890" vertical-scroll-proportion="0.93598235" vertical-offset="613" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/MyApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="76" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/values/integers.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
@@ -1501,36 +1357,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_pnsoftphone.xml">
-      <provider editor-type-id="text-editor">
-        <state line="28" column="17" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_incoming_call_gui.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_incoming_call_gui.xml">
       <provider editor-type-id="text-editor">
         <state line="5" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="65" selection-start="10737" selection-end="10737" vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="6647">
           <folding />
         </state>
       </provider>
@@ -1538,13 +1370,6 @@
     <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/OnCallingGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="31" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="597" column="41" selection-start="22139" selection-end="22139" vertical-scroll-proportion="0.0" vertical-offset="8352" max-vertical-offset="13889">
           <folding />
         </state>
       </provider>
@@ -1558,7 +1383,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/IncomingCallReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="44" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.3913669" vertical-offset="2601" max-vertical-offset="4233">
+        <state line="183" column="51" selection-start="6251" selection-end="6251" vertical-scroll-proportion="0.0" vertical-offset="2601" max-vertical-offset="4233">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1304" selection-end="1304" vertical-scroll-proportion="1.1025105" vertical-offset="0" max-vertical-offset="1955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/res/layout/activity_pnsoftphone.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="28" column="17" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/PN_SoftPhone.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/GlobalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/softphoneutils/SecurityUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="15" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/PnSoftPhoneActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="22" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="14076">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/src/main/java/com/pn/pn_softphone/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="39" selection-start="5943" selection-end="5943" vertical-scroll-proportion="0.0" vertical-offset="2260" max-vertical-offset="7106">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_SoftPhone/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.33333334" vertical-offset="135" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
