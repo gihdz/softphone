@@ -310,7 +310,7 @@ public class LoginActivity extends Activity implements SensorEventListener {
             envelope.setOutputSoapObject(request);
 
 
-            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS,60000);
 
             try  {
                 httpTransport.call(SOAP_ACTION_VERIFYIMEI, envelope);

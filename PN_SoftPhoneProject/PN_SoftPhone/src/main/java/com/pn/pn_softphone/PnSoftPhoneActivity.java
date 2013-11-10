@@ -42,14 +42,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import softphoneutils.Prueba;
+import softphoneutils.SoftPhoneService;
 
 import static softphoneutils.GlobalUtils.GlobalParameters.ip_address;
 
 /**
  * Handles all calling, receiving calls, and UI interaction in the WalkieTalkie app.
  */
-public class PnSoftPhoneActivity extends Activity implements SensorEventListener {
+public class PnSoftPhoneActivity extends Activity implements SensorEventListener, SoftPhoneService.Listener {
+
     private PnSoftPhoneActivity parentSoftPhoneActivity;
+
+    SoftPhoneService softPhoneService;
+
 
 
     public String sipAddress = null;
@@ -103,7 +108,21 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pnsoftphone);
         parentSoftPhoneActivity = this;
+
+        softPhoneService = new SoftPhoneService();
+        softPhoneService.registerListener(this);
+
+
+        Context context = getApplicationContext();
+        //Intent i = new Intent(this, SoftPhoneService.class);
+        context.startService(new Intent(this, SoftPhoneService.class));
+
+
+
         try{
+        //context.startService(i);
+
+
 
         MyApp myApp = ((MyApp)getApplicationContext());
         myApp.setSoftPhoneActivity(this);
@@ -200,6 +219,11 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         filter.addAction("android.SipDemo.INCOMING_CALL");
         callReceiver = new IncomingCallReceiver();
         this.registerReceiver(callReceiver, filter);
+
+//        IntentFilter filter2 = new IntentFilter();
+//        filter.addAction("android.SipDemo.INCOMING_CALL");
+//        callbr = new CallBr();
+//        this.registerReceiver(callbr, filter2);
 
 
         AsociacionMensajes = new HashMap<Prueba, String>();
@@ -896,6 +920,11 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 
     private void answerCall() {
         callReceiver.answerCall(this, call);
+    }
+
+    @Override
+    public void onStateChange(int cont) {
+
     }
 }
 

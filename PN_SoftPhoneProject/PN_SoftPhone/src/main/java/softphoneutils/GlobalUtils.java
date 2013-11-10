@@ -10,7 +10,7 @@ public class GlobalUtils {
 
     public static class GlobalParameters {
 
-        public static final String ip_address = "192.168.1.6";
+        public static final String ip_address = "192.168.1.7";
 
         public static final String SOAP_ACTION_REGISTERCOP = "http://tempuri.org/registerCop";
         public static final String SOAP_ACTION_LOGINCOP = "http://tempuri.org/loginCop";

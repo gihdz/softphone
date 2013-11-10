@@ -19,6 +19,8 @@
     <uses-feature android:name="android.hardware.wifi" android:required="true" />
     <uses-feature android:name="android.hardware.microphone" android:required="true" />
 
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -85,7 +87,6 @@
         <activity
             android:name="com.pn.pn_softphone.SipSettings" android:label="set_preferences"/>
         <receiver android:name="com.pn.pn_softphone.IncomingCallReceiver" android:label="Call Receiver"/>
-
 
 
 
