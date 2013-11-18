@@ -7,7 +7,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -109,18 +108,20 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         setContentView(R.layout.activity_pnsoftphone);
         parentSoftPhoneActivity = this;
 
+
         softPhoneService = new SoftPhoneService();
-        softPhoneService.registerListener(this);
+//        softPhoneService.registerListener(this);
 
 
-        Context context = getApplicationContext();
-        //Intent i = new Intent(this, SoftPhoneService.class);
-        context.startService(new Intent(this, SoftPhoneService.class));
+//        Context context = getApplicationContext();
+//        //Intent i = new Intent(this, SoftPhoneService.class);
+
 
 
 
         try{
         //context.startService(i);
+            startService(new Intent(this, SoftPhoneService.class));
 
 
 
@@ -193,6 +194,10 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
             public void onClick(View view) {
                 EditText textField = (EditText) (findViewById(R.id.llamareditText));
                 sipAddress = textField.getText().toString()+"@"+ ip_address;
+
+
+
+
 //                SipProfile.Builder builder = null;
 //                try {
 //                    builder = new SipProfile.Builder(textField.getText().toString(), ip_address);
@@ -215,10 +220,10 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
         // Set up the intent filter.  This will be used to fire an
         // IncomingCallReceiver when someone calls the SIP address used by this
         // application.
-        IntentFilter filter = new IntentFilter();
-        filter.addAction("android.SipDemo.INCOMING_CALL");
-        callReceiver = new IncomingCallReceiver();
-        this.registerReceiver(callReceiver, filter);
+//        IntentFilter filter = new IntentFilter();
+//        filter.addAction("android.SipDemo.INCOMING_CALL");
+//        callReceiver = new IncomingCallReceiver();
+//        this.registerReceiver(callReceiver, filter);
 
 //        IntentFilter filter2 = new IntentFilter();
 //        filter.addAction("android.SipDemo.INCOMING_CALL");
@@ -276,6 +281,12 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 //        "\nResolution: "+proximitySensor.getResolution() +
 //        "\nMinDelay: "+proximitySensor.getMinDelay());
     }
+
+    private void iniciarServicio() {
+        startService(new Intent(this, SoftPhoneService.class));
+    }
+
+
     private void inicializar(){
         if(!SipManager.isVoipSupported(this)){
             showDialog("El dispositivo o la version del sistema operativo no soporta VOIP.");
@@ -331,6 +342,7 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 
     @Override
     public void onDestroy() {
+        //softPhoneService.stopSelf();
         super.onDestroy();
         if (call != null) {
             call.close();
@@ -890,18 +902,47 @@ public class PnSoftPhoneActivity extends Activity implements SensorEventListener
 
         DialogoLlamada.setPositiveButton("Responder", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-                answerCall();
+                answerCallBeta();
             }
         });
         DialogoLlamada.setNegativeButton("Rechazar", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
-                closeCall();
+                closeCallBeta();
 
             }
         });
         DialogoLlamada.show();
 
     }
+
+    public void answerCallBeta() {
+        try{
+            call.answerCall(30);
+            call.startAudio();
+            call.setSpeakerMode(false);
+            updateStatus(call);
+        }catch (Exception e) {
+            if (call != null) {
+                call.close();
+            }
+        }
+
+    }
+    public void closeCallBeta() {
+        try {
+            if(call != null){
+                call.endCall();
+                call.close();
+
+            }
+            updateStatus("Llamada finalizada.");
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+
+    }
+
     public void startRinging(){
 
         mPlayer.start();

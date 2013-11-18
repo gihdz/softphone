@@ -8,10 +8,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.test.TouchUtils;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 
@@ -36,9 +34,6 @@ public class IncomingCallGui extends Activity implements SensorEventListener {
         setContentView(R.layout.activity_incoming_call_gui);
 
         pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-
-
-
 
         MyApp myApp = (MyApp)getApplicationContext();
         SoftPhoneActivity = myApp.getSoftPhoneActivity();
@@ -72,11 +67,13 @@ public class IncomingCallGui extends Activity implements SensorEventListener {
     }
     public void onCallAcceptButton(View view){
         buttonAnswer.setClickable(false);
-        IncomingCallReceiver.answerCall();
+        //IncomingCallReceiver.answerCall();
+        SoftPhoneActivity.answerCallBeta();
 
     }
     public void onCallRejectButton(View view){
-        IncomingCallReceiver.cancelCall();
+        //IncomingCallReceiver.cancelCall();
+        SoftPhoneActivity.closeCallBeta();
         this.finish();
     }
 

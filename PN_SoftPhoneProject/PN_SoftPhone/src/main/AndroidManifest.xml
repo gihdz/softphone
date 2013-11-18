@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
 
 
@@ -19,7 +20,7 @@
     <uses-feature android:name="android.hardware.wifi" android:required="true" />
     <uses-feature android:name="android.hardware.microphone" android:required="true" />
 
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
 
 
     <uses-sdk
@@ -86,10 +87,14 @@
             </activity>
         <activity
             android:name="com.pn.pn_softphone.SipSettings" android:label="set_preferences"/>
-        <receiver android:name="com.pn.pn_softphone.IncomingCallReceiver" android:label="Call Receiver"/>
 
 
 
+<service
+    android:name="softphoneutils.SoftPhoneService"
+    android:enabled="true">
+
+</service>
 
 
 
@@ -106,5 +111,7 @@
 
 
 </manifest>
+
+<!--<receiver android:name="com.pn.pn_softphone.IncomingCallReceiver" android:label="Call Receiver"/>-->
 
     <!--android:windowSoftInputMode="stateHidden|adjustResize"-->

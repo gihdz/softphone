@@ -44,6 +44,8 @@ public class IncomingCallReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent intent) {
 
 
+
+
         pnSoftPhoneActivity = (PnSoftPhoneActivity) context;
 
 
@@ -200,6 +202,7 @@ public class IncomingCallReceiver extends BroadcastReceiver {
                 incomingCall.close();
             }
         }
+
     }
     public void answerCall(PnSoftPhoneActivity pnSoftPhoneActivity, SipAudioCall incomingCall){
        // mPlayer.stop();
@@ -257,6 +260,11 @@ public class IncomingCallReceiver extends BroadcastReceiver {
        Intent incomingCall=new Intent(context,IncomingCallGui.class);
        //context.startActivity(incomingCall);
        pnSoftPhoneActivity.startActivityForResult(incomingCall, 5);
+//       Intent callIntent = new Intent(Intent.ACTION_CALL);
+//       callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//       callIntent.setClass(pnSoftPhoneActivity, IncomingCallGui.class);
+//
+//       pnSoftPhoneActivity.startActivityForResult(callIntent,5);
 
 
     }
